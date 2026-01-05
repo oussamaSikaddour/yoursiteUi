@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>DashboardUi</title>
+
+    <link rel="icon" type="image/icon" href="assets/images/logo.ico" />
+    <script type="module" crossorigin src="assets/main-06e8edaf.js"></script>
+    <link rel="stylesheet" href="assets/main-7b2ab8cd.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav" aria-labelledby="main-nav">
+        <h2 id="main-nav" class="sr-only">Main navigation</h2>
+        <a
+          class="nav__logo"
+          href="index.html"
+          tabindex="0"
+          aria-label="Description of the overall image"
+        >
+          <img src="assets/logo-8dae7779.png" alt="app Logo" />
+        </a>
+        <ol class="nav__items">
+          <li class="nav__item" role="none">
+            <a
+              class="nav__link"
+              href="#hero"
+              aria-current="page"
+              tabindex="0"
+              role="menuitem"
+            >
+              Accueil
+            </a>
+          </li>
+          <li class="nav__item" role="none">
+            <a
+              class="nav__link"
+              href="#aboutUs"
+              aria-current="page"
+              tabindex="0"
+              role="menuitem"
+            >
+              About Us
+            </a>
+          </li>
+
+          <li class="nav__item" role="none">
+            <a
+              class="nav__link"
+              href="#services"
+              aria-current="page"
+              tabindex="0"
+              role="menuitem"
+            >
+              Our Services
+            </a>
+          </li>
+          <li class="nav__item" role="none">
+            <a
+              class="nav__link"
+              href="#contactUs"
+              aria-current="page"
+              tabindex="0"
+              role="menuitem"
+            >
+              Contact Us
+            </a>
+          </li>
+          <li class="nav__item" role="none">
+            <a
+              class="nav__link"
+              href="news.html"
+              aria-current="page"
+              tabindex="0"
+              role="menuitem"
+            >
+             News
+            </a>
+          </li>
+          <li class="nav__item" role="none">
+            <div
+              tabindex="0"
+              id="menuForms-btn5"
+              class="nav__btn nav__btn--dropdown"
+              role="menuitem"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="formsItems"
+              aria-label="Examples and usage guidelines for The forms"
+              aria-labelledby="menuForms-btn5"
+            >
+              Features <i class="fa-solid fa-table"></i>
+            </div>
+            <ul role="menu" id="formsItems5" class="nav__items--sub" hidden>
+              <li role="none">
+                <a href="carousel.html" tabindex="0" role="menuitem"
+                  >Carousel</a
+                >
+              </li>
+              <li role="none">
+                <a href="infiniteScroll.html" tabindex="0" role="menuitem"
+                  >Infinite Scroll</a
+                >
+              </li>
+              <li role="none">
+                <a href="article.html" tabindex="0" role="menuitem"
+                  >Article</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <div class="lang__menu__container">
+          <button
+            id="menuLangbutton"
+            aria-haspopup="true"
+            aria-controls="menu"
+            class="lang__btn button rounded"
+          ></button>
+          <ul
+            id="langMenu"
+            role="menu"
+            aria-labelledby="menubutton"
+            class="lang__menu"
+          ></ul>
+        </div>
+      </nav>
+    </header>
+
+    <button
+      id="showPhoneNav-btn"
+      class="button nav__humb"
+      aria-expanded="false"
+      aria-controls="options"
+      aria-label="Show phone navigation"
+      aria-labelledby="showPhoneNav-btn"
+    >
+      <span></span>
+      <span></span>
+    </button>
+    <!-- Nav Phone -->
+    <nav class="nav--phone" aria-labelledby="main-nav-phone">
+      <h2 id="main-nav-phone" class="sr-only">main navigation for phone</h2>
+      <ul class="nav__items" id="options" hidden>
+        <li class="nav__item" role="none">
+          <a
+            class="nav__link"
+            href="#hero"
+            aria-current="page"
+            tabindex="0"
+            role="menuitem"
+            >Acceuil</a
+          >
+        </li>
+        <li class="nav__item" role="none">
+          <a
+            class="nav__link"
+            href="#aboutUs"
+            aria-current="page"
+            tabindex="0"
+            role="menuitem"
+            >About Us</a
+          >
+        </li>
+
+        <li class="nav__item" role="none">
+          <a
+            class="nav__link"
+            href="#services"
+            aria-current="page"
+            tabindex="0"
+            role="menuitem"
+            >Our Services</a
+          >
+        </li>
+        <li class="nav__item" role="none">
+          <a
+            class="nav__link"
+            href="#contactUs"
+            aria-current="page"
+            tabindex="0"
+            role="menuitem"
+            >Contact Us</a
+          >
+        </li>
+        <li class="nav__item" role="none">
+          <a
+            class="nav__link"
+            href="news.html"
+            aria-current="page"
+            tabindex="0"
+            role="menuitem"
+            >News</a
+          >
+        </li>
+        <li class="nav__item nav__item--dropDown" role="none">
+          <div
+            tabindex="0"
+            id="menuForms-btn7"
+            class="nav__btn nav__btn--dropdown"
+            role="menuitem"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="formsItems"
+            aria-label="Examples and usage guidelines for The forms"
+            aria-labelledby="menuForms-btn7"
+          >
+            Features<i class="fa-solid fa-table"></i>
+          </div>
+          <ul role="menu" id="formsItems7" class="nav__items--sub" hidden>
+            <li role="none">
+              <a href="carousel.html" tabindex="0" role="menuitem">Carousel</a>
+            </li>
+            <li role="none">
+              <a href="infiniteScroll.html" tabindex="0" role="menuitem"
+                >Infinite Scroll</a
+              >
+            </li>
+            <li role="none">
+              <a href="article.html" tabindex="0" role="menuitem"
+                >Article</a
+              >
+            </li>
+          </ul>
+        </li>
+        <div class="lang__menu__container">
+          <button
+            id="menuLangbutton"
+            aria-haspopup="true"
+            aria-controls="menu"
+            class="lang__btn button"
+          ></button>
+          <ul
+            id="langMenu"
+            role="menu"
+            aria-labelledby="menubutton"
+            class="lang__menu"
+          ></ul>
+        </div>
+      </ul>
+    </nav>
+    <main class="container">
+      <section
+        class="carousel hero__carousel"
+        aria-roledescription="carousel"
+        aria-label="Highlighted television shows"
+      >
+        <div id="myCarousel-items" class="carousel__items" aria-live="off">
+          <div class="carousel__item" role="group" aria-roledescription="slide">
+            <div class="carousel__item__image">
+              <a href="#">
+                <img src="assets/1-e717497e.jpg" alt="boat" />
+              </a>
+            </div>
+          </div>
+          <div class="carousel__item" role="group" aria-roledescription="slide">
+            <div class="carousel__item__image">
+              <a href="#">
+                <img src="assets/2-829bdd72.jpg" alt="fishing" />
+              </a>
+            </div>
+          </div>
+          <div class="carousel__item" role="group" aria-roledescription="slide">
+            <div class="carousel__item__image">
+              <a href="#">
+                <img src="assets/3-dce7432f.jpg" alt="anchor" />
+              </a>
+            </div>
+          </div>
+          <div class="carousel__item" role="group" aria-roledescription="slide">
+            <div class="carousel__item__image">
+              <a href="#">
+                <img src="assets/4-11122f18.jpg" alt="anchor" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <div class="hero__content">
+          <h2>IT Partner IT Partner IT Partner</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex enim
+            accusantium quis assumenda expedita ullam temporibus, magni
+            reiciendis perferendis, sequi quod sed iusto maxime molestiae aut
+            non quibusdam dolorem totam!
+          </p>
+
+          <button class="button button--action">Get Started</button>
+        </div>
+
+        <a href="#aboutUs" class="hero__arrow">
+          <img src="assets/triangle-ce0cc119.png" alt="triangle" />
+        </a>
+      </section>
+
+      <!-- About Us Section -->
+      <section class="about__us" id="aboutUs">
+        <div class="section__title">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat,
+            nobis?
+          </p>
+        </div>
+
+        <div class="about__us__content">
+          <div class="about__us__img__container">
+            <div class="about__us__info">
+              <h2 class="counter">10</h2>
+              <p>Years</p>
+            </div>
+            <div class="about__us__info">
+              <h2 class="counter">5</h2>
+              <p>Services</p>
+            </div>
+            <div class="about__us__info">
+              <h2 class="counter">245</h2>
+              <p>Bed</p>
+            </div>
+
+            <div class="about__us__img">
+              <img src="assets/ehs-32d285e2.jpg" alt="aboutUs" />
+            </div>
+          </div>
+          <div class="about__us__body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              eum maxime sunt quas consequatur deleniti! Eaque, eligendi culpa!
+              Similique dolorem provident eaque. Deserunt ut fugit ipsum
+              expedita enim distinctio soluta.
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+              earum quis sint aspernatur, quo repellendus atque vitae minus quas
+              modi dolor sapiente quibusdam iusto voluptates pariatur molestias.
+              Perferendis, aut. Cum.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services" id="services">
+        <div class="section__title">
+          <h2>Services</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat,
+            nobis?
+          </p>
+        </div>
+
+        <div class="services__container">
+          <div class="service__card">
+            <a href="service.html" class="service__link">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <div class="service__icon">
+              <img src="assets/gyenco-efdc27bb.png" alt="Gyneco" />
+            </div>
+
+            <div class="service__body">
+              <h2 class="service__title">Gynecology and Obstetrics</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                in, esse, nostrum obcaecati porro modi eveniet earum quidem
+                ipsam deserunt est accusamus alias, debitis ullam voluptatem
+                autem adipisci dolor quibusdam.
+              </p>
+            </div>
+            <div class="service__footer">
+              <strong class="counter">60</strong> Bed
+            </div>
+          </div>
+          <div class="service__card">
+            <a href="service.html" class="service__link">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="service__icon">
+              <img src="assets/churgie-970d439c.png" alt="Gyneco" />
+            </div>
+
+            <div class="service__body">
+              <h2 class="service__title">pediatric surgery</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                in, esse, nostrum obcaecati porro modi eveniet earum quidem
+                ipsam deserunt est accusamus alias, debitis ullam voluptatem
+                autem adipisci dolor quibusdam.
+              </p>
+            </div>
+            <div class="service__footer">
+              <strong class="counter">80</strong> Bed
+            </div>
+          </div>
+          <div class="service__card">
+            <a href="service.html" class="service__link">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="service__icon">
+              <img src="assets/pediatrie-217ba836.png" alt="Gyneco" />
+            </div>
+
+            <div class="service__body">
+              <h2 class="service__title">pediatrics</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                in, esse, nostrum obcaecati porro modi eveniet earum quidem
+                ipsam deserunt est accusamus alias, debitis ullam voluptatem
+                autem adipisci dolor quibusdam.
+              </p>
+            </div>
+            <div class="service__footer">
+              <strong class="counter">55</strong> Bed
+            </div>
+          </div>
+          <div class="service__card">
+            <a href="service.html" class="service__link">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="service__icon">
+              <img src="assets/neoNat-7b250b5b.png" alt="Gyneco" />
+            </div>
+
+            <div class="service__body">
+              <h2 class="service__title">Neonatology</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                in, esse, nostrum obcaecati porro modi eveniet earum quidem
+                ipsam deserunt est accusamus alias, debitis ullam voluptatem
+                autem adipisci dolor quibusdam.
+              </p>
+            </div>
+            <div class="service__footer">
+              <strong class="counter">52</strong> Bed
+            </div>
+          </div>
+          <div class="service__card">
+            <a href="service.html" class="service__link">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="service__icon">
+              <img src="assets/ria-79e8b653.png" alt="Gyneco" />
+            </div>
+
+            <div class="service__body">
+              <h2 class="service__title">ANESTHESIA AND RESUSCITATION</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                in, esse, nostrum obcaecati porro modi eveniet earum quidem
+                ipsam deserunt est accusamus alias, debitis ullam voluptatem
+                autem adipisci dolor quibusdam.
+              </p>
+            </div>
+            <div class="service__footer">
+              <strong class="counter">52</strong> Bed
+            </div>
+          </div>
+        </div>
+
+        <a class="button button--action" href="services.html">
+            Services
+          <i class="fa-solid fa-arrow-right-long arrow"></i>
+        </a>
+      </section>
+
+      <!-- Contact Us Section -->
+      <section class="contact__us" id="contactUs">
+        <div class="contact__us__content">
+          <div class="contact__us__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.194516211143!2d-1.3259844!3d34.87646149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd78c986916128a7%3A0x8c24773378501f53!2sEHS%20Hopital%20M%C3%A8re%20et%20Enfant%20Tlemcen!5e0!3m2!1sfr!2sdz!4v1765550060598!5m2!1sfr!2sdz"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="contact__us__card">
+            <div class="column">
+              <div class="row">
+                <div class="contact__us__coordinate">
+                  <div class="contact__us__coordinate__icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="contact__us__coordinate__texts">
+                    <h4>Phone</h4>
+                    <p>043-55-20-20</p>
+                  </div>
+                </div>
+                <div class="contact__us__coordinate">
+                  <div class="contact__us__coordinate__icon">
+                    <i class="fa-solid fa-fax"></i>
+                  </div>
+                  <div class="contact__us__coordinate__texts">
+                    <h4>Fax</h4>
+                    <p>043-55-20-20</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="contact__us__coordinate">
+                  <div class="contact__us__coordinate__icon">
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <div class="contact__us__coordinate__texts">
+                    <h4>Email</h4>
+                    <p>ehstlemcen@gmail.com</p>
+                  </div>
+                </div>
+                <div class="contact__us__coordinate">
+                  <div class="contact__us__coordinate__icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="contact__us__coordinate__texts">
+                    <h4>Location</h4>
+                    <p>Boulevard Mohamed V,Tlemcen,Algérie,13000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact__us__instruction">
+              <h3>Get In Touch</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Placeat, nobis?
+              </p>
+            </div>
+            <div class="form__container" inert>
+              <form class="form" method="POST">
+                <div class="row">
+                  <div class="input__item">
+                    <div class="input__group">
+                      <input
+                        type="text"
+                        class="input"
+                        placeholder="Your Name"
+                        name="name"
+                        id="inputNameId"
+                        required
+                      />
+                      <label for="inputNameId" class="input__label"
+                        >Your Name</label
+                      >
+                    </div>
+                  </div>
+                  <div class="input__item">
+                    <div class="input__group">
+                      <input
+                        type="text"
+                        class="input"
+                        placeholder="Your email"
+                        name="name"
+                        id="inputEmailId"
+                        required
+                      />
+                      <label for="inputEmailId" class="input__label"
+                        >Your email</label
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="textarea__group">
+                  <textarea
+                    class="textarea"
+                    id="observations"
+                    name="observations"
+                    rows="4"
+                    placeholder=" "
+                    maxlength="200"
+                  ></textarea>
+                  <label for="observations" class="textarea__label"
+                    >Your Message</label
+                  >
+                </div>
+                <div class="row">
+                  <button class="button button--action" type="submit">
+                    Send Message
+
+                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                    <div class="loader xs">
+                      <div class="loader__circle"></div>
+                      <div class="loader__circle"></div>
+                    </div>
+                  </button>
+                  <ul class="socials">
+                    <li>
+                      <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="fa-brands fa-github"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__top__right">
+          <h4>Services</h4>
+          <div class="footer__links">
+            <div class="column">
+              <a href="service.html"><span>&#8250;</span> Service 1</a>
+              <a href="service.html"><span>&#8250;</span> Service 2</a>
+              <a href="service.html"><span>&#8250;</span> Service 3</a>
+              <a href="service.html"><span>&#8250;</span> Service 4</a>
+              <a href="service.html"><span>&#8250;</span> Service 5</a>
+            </div>
+
+            <div class="column">
+              <a href="service.html"><span>&#8250;</span> Service 6</a>
+              <a href="service.html"><span>&#8250;</span> Service 7</a>
+              <a href="service.html"><span>&#8250;</span> Service 8</a>
+              <a href="service.html"><span>&#8250;</span> Service 9</a>
+              <a href="service.html"><span>&#8250;</span> Service 10</a>
+            </div>
+
+            <div class="column">
+              <a href="service.html"><span>&#8250;</span> Service 11</a>
+              <a href="service.html"><span>&#8250;</span> Service 12</a>
+              <a href="service.html"><span>&#8250;</span> Service 13</a>
+              <a href="service.html"><span>&#8250;</span> Service 14</a>
+              <a href="service.html"><span>&#8250;</span> Service 15</a>
+            </div>
+          </div>
+
+          <a class="button button--action" href="services.html">
+            View All Services
+            <i class="fa-solid fa-arrow-right-long arrow"></i>
+          </a>
+        </div>
+        <div class="footer__top__left">
+          <h4>Get In Touch</h4>
+          <div class="footer__coordinates">
+            <div class="footer__coordinate">
+              <div class="footer__coordinate__icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <p>Boulevard Mohamed V,Tlemcen,Algérie,13000</p>
+            </div>
+            <div class="footer__coordinate">
+              <div class="footer__coordinate__icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <p>ehstlemcen@gmail.com</p>
+            </div>
+            <div class="footer__coordinate">
+              <div class="footer__coordinate__icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <p>043-55-20-20</p>
+            </div>
+          </div>
+          <ul class="socials">
+            <li>
+              <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom__right">
+          <a href="index.html"
+            ><img class="logo" src="assets/logo-8dae7779.png"
+          /></a>
+          <p class="text-light">
+            &#169; Copyright EHS-Telmcen All Right Reserved
+          </p>
+        </div>
+        <div class="footer__bottom__left">
+          <div class="row">
+            <a href="#">Privacy Pollicy</a>
+            <a href="#">Terms Of Service</a>
+            <a href="#">Cookie Pollicy</a>
+          </div>
+          <h4>Designed by <a href="#">Oussama Si kaddour</a></h4>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  
+</html>

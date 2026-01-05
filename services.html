@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Services | DashboardUi</title>
+
+    <link rel="icon" type="image/icon" href="assets/images/logo.ico" />
+    <script type="module" crossorigin src="assets/main-06e8edaf.js"></script>
+    <link rel="stylesheet" href="assets/main-7b2ab8cd.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav" aria-labelledby="main-nav">
+        <h2 id="main-nav" class="sr-only">Main navigation</h2>
+        <ol class="nav__items">
+          <li class="nav__item" role="none">
+            <a
+              class="nav__link"
+              href="index.html"
+              aria-current="page"
+              tabindex="0"
+              role="menuitem"
+            >
+              Index
+            </a>
+          </li>
+        </ol>
+        <div class="lang__menu__container">
+          <button
+            id="menuLangbutton"
+            aria-haspopup="true"
+            aria-controls="menu"
+            class="lang__btn button rounded"
+          ></button>
+          <ul
+            id="langMenu"
+            role="menu"
+            aria-labelledby="menubutton"
+            class="lang__menu"
+          ></ul>
+        </div>
+      </nav>
+    </header>
+
+    <button
+      id="showPhoneNav-btn"
+      class="button nav__humb"
+      aria-expanded="false"
+      aria-controls="options"
+      aria-label="Show phone navigation"
+      aria-labelledby="showPhoneNav-btn"
+    >
+      <span></span>
+      <span></span>
+    </button>
+    <!-- Nav Phone -->
+    <nav class="nav--phone" aria-labelledby="main-nav-phone">
+      <h2 id="main-nav-phone" class="sr-only">main navigation for phone</h2>
+      <ul class="nav__items" id="options" hidden>
+        <li class="nav__item" role="none">
+          <a
+            class="nav__link"
+            href="index.html"
+            aria-current="page"
+            tabindex="0"
+            role="menuitem"
+          >
+            Index
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class="container">
+      <div class="container__heading">
+        <div class="heading">
+          <div class="heading__top">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+          <ol>
+            <li>
+              <a href="index.html">Home </a>
+              <svg
+                class="breadcrumb__icon"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </li>
+            <li class="current">
+              <a href="services.html">Services</a>
+              <svg
+                class="breadcrumb__icon"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </li>
+          </ol>
+        </nav>
+          </div>
+          <h3 class="heading__title">Nos Services</h3>
+          <div class="heading__center">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Officiis, culpa nobis autem suscipit sequi ut molestias ipsa
+              cupiditate blanditiis? Dolores enim consequuntur in ea et eveniet
+              reprehenderit omnis vitae recusandae.
+            </p>
+          </div>
+          <div class="heading__bottom"></div>
+        </div>
+      </div>
+
+      <div class="pages__container">
+        <div class="page">
+          <div class="service__card">
+            <a href="service.html" class="service__link">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <div class="service__icon">
+              <img src="assets/gyenco-efdc27bb.png" alt="Gyneco" />
+            </div>
+
+            <div class="service__body">
+              <h2 class="service__title">Gynecology and Obstetrics</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                in, esse, nostrum obcaecati porro modi eveniet earum quidem
+                ipsam deserunt est accusamus alias, debitis ullam voluptatem
+                autem adipisci dolor quibusdam.
+              </p>
+            </div>
+            <div class="service__footer">
+              <strong class="counter">60</strong> Bed
+            </div>
+          </div>
+          <div class="service__card">
+            <a href="service.html" class="service__link">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="service__icon">
+              <img src="assets/churgie-970d439c.png" alt="Gyneco" />
+            </div>
+
+            <div class="service__body">
+              <h2 class="service__title">pediatric surgery</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                in, esse, nostrum obcaecati porro modi eveniet earum quidem
+                ipsam deserunt est accusamus alias, debitis ullam voluptatem
+                autem adipisci dolor quibusdam.
+              </p>
+            </div>
+            <div class="service__footer">
+              <strong class="counter">80</strong> Bed
+            </div>
+          </div>
+          <div class="service__card">
+            <a href="service.html" class="service__link">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="service__icon">
+              <img src="assets/pediatrie-217ba836.png" alt="Gyneco" />
+            </div>
+
+            <div class="service__body">
+              <h2 class="service__title">pediatrics</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                in, esse, nostrum obcaecati porro modi eveniet earum quidem
+                ipsam deserunt est accusamus alias, debitis ullam voluptatem
+                autem adipisci dolor quibusdam.
+              </p>
+            </div>
+            <div class="service__footer">
+              <strong class="counter">55</strong> Bed
+            </div>
+          </div>
+          <div class="service__card">
+            <a href="service.html" class="service__link">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="service__icon">
+              <img src="assets/neoNat-7b250b5b.png" alt="Gyneco" />
+            </div>
+
+            <div class="service__body">
+              <h2 class="service__title">Neonatology</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                in, esse, nostrum obcaecati porro modi eveniet earum quidem
+                ipsam deserunt est accusamus alias, debitis ullam voluptatem
+                autem adipisci dolor quibusdam.
+              </p>
+            </div>
+            <div class="service__footer">
+              <strong class="counter">52</strong> Bed
+            </div>
+          </div>
+          <div class="service__card">
+            <a href="service.html" class="service__link">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="service__icon">
+              <img src="assets/ria-79e8b653.png" alt="Gyneco" />
+            </div>
+
+            <div class="service__body">
+              <h2 class="service__title">ANESTHESIA AND RESUSCITATION</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                in, esse, nostrum obcaecati porro modi eveniet earum quidem
+                ipsam deserunt est accusamus alias, debitis ullam voluptatem
+                autem adipisci dolor quibusdam.
+              </p>
+            </div>
+            <div class="service__footer">
+              <strong class="counter">52</strong> Bed
+            </div>
+          </div>
+        </div>
+        <div class="pages__container__bottom">
+          <nav class="pagination__container">
+            <div
+              role="navigation"
+              aria-label="Pagination Navigation"
+              class="pagination"
+            >
+              <div class="pagination__content">
+                <div class="pagination__info">
+                  <p>
+                    Showing
+                    <strong>1</strong>
+                    to
+                    <strong>2</strong>
+                    of
+                    <strong>3</strong>
+                    results
+                  </p>
+                </div>
+
+                <div class="pagination__links">
+                  <button type="button" class="button" disabled>
+                    <i class="fa-solid fa-angles-left"></i>
+                  </button>
+
+                  <button type="button" class="button" disabled>
+                    <i class="fa-solid fa-angle-left"></i>
+                  </button>
+
+                  <button type="button" class="button">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </button>
+
+                  <button type="button" class="button">
+                    <i class="fa-solid fa-angles-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  
+</html>

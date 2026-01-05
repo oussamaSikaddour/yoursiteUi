@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>News | DashboardUi</title>
+
+    <link rel="icon" type="image/icon" href="assets/images/logo.ico" />
+    <script type="module" crossorigin src="assets/main-06e8edaf.js"></script>
+    <link rel="stylesheet" href="assets/main-7b2ab8cd.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav" aria-labelledby="main-nav">
+        <h2 id="main-nav" class="sr-only">Main navigation</h2>
+        <ol class="nav__items">
+          <li class="nav__item" role="none">
+            <a
+              class="nav__link"
+              href="index.html"
+              aria-current="page"
+              tabindex="0"
+              role="menuitem"
+            >
+              Index
+            </a>
+          </li>
+        </ol>
+                <div class="lang__menu__container">
+          <button
+            id="menuLangbutton"
+            aria-haspopup="true"
+            aria-controls="menu"
+            class="lang__btn button rounded"
+          ></button>
+          <ul
+            id="langMenu"
+            role="menu"
+            aria-labelledby="menubutton"
+            class="lang__menu"
+          ></ul>
+        </div>
+      </nav>
+    </header>
+
+    <button
+      id="showPhoneNav-btn"
+      class="button nav__humb"
+      aria-expanded="false"
+      aria-controls="options"
+      aria-label="Show phone navigation"
+      aria-labelledby="showPhoneNav-btn"
+    >
+      <span></span>
+      <span></span>
+    </button>
+    <!-- Nav Phone -->
+    <nav class="nav--phone" aria-labelledby="main-nav-phone">
+      <h2 id="main-nav-phone" class="sr-only">main navigation for phone</h2>
+      <ul class="nav__items" id="options" hidden>
+        <li class="nav__item" role="none">
+          <a
+            class="nav__link"
+            href="index.html"
+            aria-current="page"
+            tabindex="0"
+            role="menuitem"
+          >
+            Index
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class="container">
+      <div class="container__heading">
+        <div class="heading">
+          <div class="heading__top">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+          <ol>
+            <li>
+              <a href="index.html">Home </a>
+              <svg
+                class="breadcrumb__icon"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </li>
+            <li class="current">
+              <a href="news.html">News</a>
+              <svg
+                class="breadcrumb__icon"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </li>
+          </ol>
+        </nav>
+          </div>
+          <h3 class="heading__title">News</h3>
+          <div class="heading__center">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Officiis, culpa nobis autem suscipit sequi ut molestias ipsa
+              cupiditate blanditiis? Dolores enim consequuntur in ea et eveniet
+              reprehenderit omnis vitae recusandae.
+            </p>
+          </div>
+          <div class="heading__bottom"></div>
+        </div>
+      </div>
+
+      <div class="pages__container">
+        <div class="page">
+          <div class="article__container">
+            <div class="article__header">
+              <div class="article__carousel">
+                <div
+                  class="carousel"
+                  aria-roledescription="carousel"
+                  aria-label="Highlighted television shows"
+                >
+                  <div class="controls">
+                    <button
+                      type="button"
+                      class="button transparent rounded previous"
+                      aria-controls="myCarousel-items"
+                      aria-label="Previous Slide"
+                    >
+                      <span><i class="fa-solid fa-arrow-left"></i></span>
+                    </button>
+                    <button
+                      type="button"
+                      class="button transparent rounded rotation"
+                      aria-label="Stop automatic slide show"
+                    ></button>
+                    <button
+                      type="button"
+                      class="button transparent rounded next"
+                      aria-controls="myCarousel-items"
+                      aria-label="Next Slide"
+                    >
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </button>
+                  </div>
+                  <div
+                    id="myCarousel-items"
+                    class="carousel__items"
+                    aria-live="off"
+                  >
+                    <div
+                      class="carousel__item"
+                      role="group"
+                      aria-roledescription="slide"
+                    >
+                      <div class="carousel__item__image">
+                        <a href="#">
+                          <img src="assets/1-e717497e.jpg" alt="boat" />
+                        </a>
+                      </div>
+                  
+                    </div>
+                    <div
+                      class="carousel__item"
+                      role="group"
+                      aria-roledescription="slide"
+                    >
+                      <div class="carousel__item__image">
+                        <a href="#">
+                          <img
+                            src="assets/2-829bdd72.jpg"
+                            alt="fishing"
+                          />
+                        </a>
+                      </div>
+                  
+                    </div>
+                    <div
+                      class="carousel__item"
+                      role="group"
+                      aria-roledescription="slide"
+                    >
+                      <div class="carousel__item__image">
+                        <a href="#">
+                          <img
+                            src="assets/3-dce7432f.jpg"
+                            alt="anchor"
+                          />
+                        </a>
+                      </div>
+          
+                    </div>
+                    <div
+                      class="carousel__item"
+                      role="group"
+                      aria-roledescription="slide"
+                    >
+                      <div class="carousel__item__image">
+                        <a href="#">
+                          <img
+                            src="assets/4-11122f18.jpg"
+                            alt="anchor"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="article__header__info">
+                <h2>Article One</h2>
+                <span>Dec 18 , 2024</span>
+              </div>
+            </div>
+            <div class="article">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur sunt sed odio voluptas quo similique commodi quas
+                cumque unde ipsam, recusandae dolor soluta deserunt accusantium
+                doloribus molestias ea eveniet dicta?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                quibusdam nulla nesciunt quaerat dolore totam sed, impedit
+                obcaecati asperiores sapiente, harum vel! Enim totam quo harum
+                veniam dolores, id incidunt.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus omnis alias nostrum, facilis in quae. Officia,
+                architecto maxime voluptates vitae, adipisci quia accusamus
+                fugiat consequatur eveniet illo dolorem. Quo, minus?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Debitis deserunt sequi at, accusantium tempore, a libero
+                necessitatibus ex praesentium eveniet officia doloremque magnam,
+                sapiente unde quae sint nulla ab? Vel?
+              </p>
+            </div>
+            <div class="article__footer">
+              <button class="button button--action extendArticle">
+                Read More
+                <i class="fa-solid fa-arrow-down"></i>
+              </button>
+            </div>
+          </div>
+          <div class="article__container">
+            <div class="article__header">
+              <div class="article__carousel">
+                <div
+                  class="carousel"
+                  aria-roledescription="carousel"
+                  aria-label="Highlighted television shows"
+                >
+                  <div class="controls">
+                    <button
+                      type="button"
+                      class="button transparent rounded previous"
+                      aria-controls="myCarousel-items"
+                      aria-label="Previous Slide"
+                    >
+                      <span><i class="fa-solid fa-arrow-left"></i></span>
+                    </button>
+                    <button
+                      type="button"
+                      class="button transparent rounded rotation"
+                      aria-label="Stop automatic slide show"
+                    ></button>
+                    <button
+                      type="button"
+                      class="button transparent rounded next"
+                      aria-controls="myCarousel-items"
+                      aria-label="Next Slide"
+                    >
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </button>
+                  </div>
+                  <div
+                    id="myCarousel-items"
+                    class="carousel__items"
+                    aria-live="off"
+                  >
+                    <div
+                      class="carousel__item"
+                      role="group"
+                      aria-roledescription="slide"
+                    >
+                      <div class="carousel__item__image">
+                        <a href="#">
+                          <img src="assets/1-e717497e.jpg" alt="boat" />
+                        </a>
+                      </div>
+                  
+                    </div>
+                    <div
+                      class="carousel__item"
+                      role="group"
+                      aria-roledescription="slide"
+                    >
+                      <div class="carousel__item__image">
+                        <a href="#">
+                          <img
+                            src="assets/2-829bdd72.jpg"
+                            alt="fishing"
+                          />
+                        </a>
+                      </div>
+                  
+                    </div>
+                    <div
+                      class="carousel__item"
+                      role="group"
+                      aria-roledescription="slide"
+                    >
+                      <div class="carousel__item__image">
+                        <a href="#">
+                          <img
+                            src="assets/3-dce7432f.jpg"
+                            alt="anchor"
+                          />
+                        </a>
+                      </div>
+          
+                    </div>
+                    <div
+                      class="carousel__item"
+                      role="group"
+                      aria-roledescription="slide"
+                    >
+                      <div class="carousel__item__image">
+                        <a href="#">
+                          <img
+                            src="assets/4-11122f18.jpg"
+                            alt="anchor"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="article__header__info">
+                <h2>Article One</h2>
+                <span>Dec 18 , 2024</span>
+              </div>
+            </div>
+            <div class="article">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur sunt sed odio voluptas quo similique commodi quas
+                cumque unde ipsam, recusandae dolor soluta deserunt accusantium
+                doloribus molestias ea eveniet dicta?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                quibusdam nulla nesciunt quaerat dolore totam sed, impedit
+                obcaecati asperiores sapiente, harum vel! Enim totam quo harum
+                veniam dolores, id incidunt.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus omnis alias nostrum, facilis in quae. Officia,
+                architecto maxime voluptates vitae, adipisci quia accusamus
+                fugiat consequatur eveniet illo dolorem. Quo, minus?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Debitis deserunt sequi at, accusantium tempore, a libero
+                necessitatibus ex praesentium eveniet officia doloremque magnam,
+                sapiente unde quae sint nulla ab? Vel?
+              </p>
+            </div>
+            <div class="article__footer">
+              <button class="button button--action extendArticle">
+                Read More
+                <i class="fa-solid fa-arrow-down"></i>
+              </button>
+            </div>
+          </div>
+          <div class="article__container">
+            <div class="article__header">
+              <div class="article__carousel">
+                <div
+                  class="carousel"
+                  aria-roledescription="carousel"
+                  aria-label="Highlighted television shows"
+                >
+                  <div class="controls">
+                    <button
+                      type="button"
+                      class="button transparent rounded previous"
+                      aria-controls="myCarousel-items"
+                      aria-label="Previous Slide"
+                    >
+                      <span><i class="fa-solid fa-arrow-left"></i></span>
+                    </button>
+                    <button
+                      type="button"
+                      class="button transparent rounded rotation"
+                      aria-label="Stop automatic slide show"
+                    ></button>
+                    <button
+                      type="button"
+                      class="button transparent rounded next"
+                      aria-controls="myCarousel-items"
+                      aria-label="Next Slide"
+                    >
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </button>
+                  </div>
+                  <div
+                    id="myCarousel-items"
+                    class="carousel__items"
+                    aria-live="off"
+                  >
+                    <div
+                      class="carousel__item"
+                      role="group"
+                      aria-roledescription="slide"
+                    >
+                      <div class="carousel__item__image">
+                        <a href="#">
+                          <img src="assets/1-e717497e.jpg" alt="boat" />
+                        </a>
+                      </div>
+                  
+                    </div>
+                    <div
+                      class="carousel__item"
+                      role="group"
+                      aria-roledescription="slide"
+                    >
+                      <div class="carousel__item__image">
+                        <a href="#">
+                          <img
+                            src="assets/2-829bdd72.jpg"
+                            alt="fishing"
+                          />
+                        </a>
+                      </div>
+                  
+                    </div>
+                    <div
+                      class="carousel__item"
+                      role="group"
+                      aria-roledescription="slide"
+                    >
+                      <div class="carousel__item__image">
+                        <a href="#">
+                          <img
+                            src="assets/3-dce7432f.jpg"
+                            alt="anchor"
+                          />
+                        </a>
+                      </div>
+          
+                    </div>
+                    <div
+                      class="carousel__item"
+                      role="group"
+                      aria-roledescription="slide"
+                    >
+                      <div class="carousel__item__image">
+                        <a href="#">
+                          <img
+                            src="assets/4-11122f18.jpg"
+                            alt="anchor"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="article__header__info">
+                <h2>Article One</h2>
+                <span>Dec 18 , 2024</span>
+              </div>
+            </div>
+            <div class="article">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur sunt sed odio voluptas quo similique commodi quas
+                cumque unde ipsam, recusandae dolor soluta deserunt accusantium
+                doloribus molestias ea eveniet dicta?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                quibusdam nulla nesciunt quaerat dolore totam sed, impedit
+                obcaecati asperiores sapiente, harum vel! Enim totam quo harum
+                veniam dolores, id incidunt.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus omnis alias nostrum, facilis in quae. Officia,
+                architecto maxime voluptates vitae, adipisci quia accusamus
+                fugiat consequatur eveniet illo dolorem. Quo, minus?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Debitis deserunt sequi at, accusantium tempore, a libero
+                necessitatibus ex praesentium eveniet officia doloremque magnam,
+                sapiente unde quae sint nulla ab? Vel?
+              </p>
+            </div>
+            <div class="article__footer">
+              <button class="button button--action extendArticle">
+                Read More
+                <i class="fa-solid fa-arrow-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pages__container__bottom">
+          <nav class="pagination__container">
+            <div
+              role="navigation"
+              aria-label="Pagination Navigation"
+              class="pagination"
+            >
+              <div class="pagination__content">
+                <div class="pagination__info">
+                  <p>
+                    Showing
+                    <strong>1</strong>
+                    to
+                    <strong>2</strong>
+                    of
+                    <strong>3</strong>
+                    results
+                  </p>
+                </div>
+
+                <div class="pagination__links">
+                  <button type="button" class="button" disabled>
+                    <i class="fa-solid fa-angles-left"></i>
+                  </button>
+
+                  <button type="button" class="button" disabled>
+                    <i class="fa-solid fa-angle-left"></i>
+                  </button>
+
+                  <button type="button" class="button">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </button>
+
+                  <button type="button" class="button">
+                    <i class="fa-solid fa-angles-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  
+</html>
